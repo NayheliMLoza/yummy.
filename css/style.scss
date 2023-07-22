@@ -1,0 +1,661 @@
+$color_1: white;
+$color_2: black;
+$color_3: #ffde00;
+$color_4: #b6b4b4;
+$font-family_1: 'Merriweather', serif;
+$font-family_2: 'Roboto Slab', serif;
+$font-family_3: 'VT323', monospace;
+$font-family_4: 'Port Lligat Slab', serif;
+$background-color_1: rgb(0, 0 , 0);
+$background-color_2: #ffde00;
+$background-color_3: black;
+$background-color_4: #000000;
+$background-color_5: #535252;
+
+@import "https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap";
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap";
+
+@keyframes fotofondo {
+	from {
+		background-image: url(../img/menu.png);
+	}
+	to {
+		background-image: url(../img/inicio.png);
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	h3 {
+		font-family: $font-family_1;
+	}
+	p {
+		font-family: $font-family_2;
+	}
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color_1;
+	img {
+		margin: auto 0 auto 20px;
+		width: 80px;
+		border-radius: 50%;
+	}
+}
+header {
+	background-image: url(../img/inicio.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 60rem;
+	animation-name: fotofondo;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.checkbtn {
+	display: none;
+}
+#check {
+	display: none;
+}
+.menu-nav {
+	display: flex;
+	list-style: none;
+	margin-right: 50px;
+	li {
+		margin: auto 10px;
+		a {
+			text-decoration: none;
+			color: $color_1;
+			font-family: $font-family_3;
+			font-size: 1.8rem;
+			padding: 20px;
+			&:hover {
+				text-decoration: underline;
+				background-color: $background-color_2;
+				color: $color_2;
+			}
+		}
+	}
+}
+.activo {
+	background-color: $background-color_2;
+}
+.menu2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: $background-color_2;
+	list-style: none;
+	padding: 10px 0;
+	li {
+		a {
+			text-decoration: none;
+			color: $color_2;
+			font-family: $font-family_3;
+			font-size: 2.5rem;
+			padding-right: 50px;
+		}
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.novedades {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+}
+.cards {
+	width: 340px;
+	margin: 40px 50px;
+	text-align: center;
+	border: solid 5px black;
+	color: $color_2;
+	height: 400px;
+	&:hover {
+		box-shadow: 10px 10px 10px black;
+	}
+	img {
+		width: 100%;
+		height: 250px;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1.3rem;
+		padding: 10px;
+	}
+}
+.especialidad {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-color_2;
+	margin: 50px;
+	padding-right: 50px;
+	border-radius: 20px;
+	img {
+		width: 50%;
+		padding-right: 50px;
+		border-radius: 20px 0 0 20px;
+	}
+}
+.text3 {
+	color: $color_2;
+	width: 50%;
+	h2 {
+		font-size: 6rem;
+		font-family: $font-family_3;
+	}
+	h3 {
+		font-size: 3rem;
+	}
+	p {
+		font-size: 2rem;
+		text-align: justify;
+	}
+}
+.reseñas {
+	margin: 70px 0;
+	h2 {
+		font-size: 4rem;
+		text-align: center;
+		margin-bottom: 30px;
+		font-family: $font-family_3;
+	}
+}
+.reseñas-t {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.testimonios {
+	width: 400px;
+	height: 490px;
+	text-align: center;
+	font-size: 1.2rem;
+	color: $color_3;
+	background-color: $background-color_3;
+	padding: 10px;
+	img {
+		width: 200px;
+		border-radius: 50%;
+		border: solid 3px #ffde00;
+	}
+	h3 {
+		font-size: 1.7rem;
+		padding-top: 10px;
+	}
+	&:hover {
+		width: 420px;
+		height: 500px;
+		border: solid 5px #ffde00;
+	}
+}
+.nutricion {
+	padding: 100px 10px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	h3 {
+		font-size: 1.8rem;
+	}
+}
+.text1 {
+	width: 900px;
+	float: left;
+	padding-right: 70px;
+	text-align: justify;
+	p {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-family: $font-family_3;
+		font-size: 2.5rem;
+	}
+}
+table {
+	border: solid 3px black;
+	background-color: $background-color_2;
+	width: 1100px;
+}
+td {
+	width: 160px;
+	height: 35px;
+	text-align: center;
+	font-family: $font-family_4;
+	font-size: 1.3rem;
+}
+.menu-ha {
+	background-color: $background-color_2;
+	h2 {
+		font-size: 5rem;
+		font-family: $font-family_3;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+.menu-ham {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.tarj {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: black;
+	border-radius: 25px;
+	box-shadow: 20px 20px 50px black;
+	margin: 40px;
+	.contend-card {
+		position: absolute;
+		top: 0px;
+		height: 0px;
+		width: 400px;
+		border-radius: 25px;
+		background: #ffde00;
+		backdrop-filter: blur(6px);
+		visibility: hidden;
+	}
+	&:hover {
+		.contend-card {
+			height: 400px;
+			transition: 0.5s;
+			visibility: visible;
+			border: solid 3px black;
+		}
+		.title {
+			visibility: visible;
+		}
+		.contend-text {
+			transition: 0.7s;
+			visibility: visible;
+		}
+	}
+	.img1 {
+		position: absolute;
+		left: 0px;
+		border-radius: 25px;
+		width: 100%;
+		height: 400px;
+	}
+	.title {
+		position: relative;
+		color: $color_2;
+		top: 10px;
+		text-align: center;
+		visibility: hidden;
+	}
+	.contend-text {
+		position: relative;
+		color: $color_2;
+		margin: 15px;
+		text-align: center;
+		font-size: 1.3rem;
+	}
+}
+.queso {
+	position: relative;
+	width: 100%;
+	left: 0%;
+	bottom: 0%;
+	margin-bottom: -10px;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 30px 0;
+	background-color: $background-color_4;
+	color: $color_3;
+	h3 {
+		font-size: 1.5rem;
+		padding-top: 25px;
+		text-decoration: underline;
+	}
+	li {
+		list-style: none;
+		padding-top: 15px;
+	}
+}
+.redes {
+	ul {
+		display: flex;
+		font-size: 2rem;
+	}
+	img {
+		width: 100px;
+	}
+	h2 {
+		font-family: $font-family_3;
+		font-size: 3rem;
+		color: $color_3;
+		text-align: justify;
+	}
+	li {
+		a {
+			padding-right: 20px;
+		}
+	}
+}
+.copy {
+	background-color: $background-color_5;
+	clear: both;
+	color: $color_4;
+	text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	#check {
+		&:checked {
+			~ {
+				.menu-nav {
+					display: block;
+				}
+			}
+		}
+	}
+	.checkbtn {
+		display: block;
+		padding-right: 30px;
+	}
+	.menu-nav {
+		display: none;
+		position: absolute;
+		top: 10%;
+		left: 0%;
+		background: rgb(12, 12, 12);
+		width: 100%;
+		li {
+			padding: 5px;
+			display: flex;
+			justify-content: center;
+			margin: 0;
+		}
+	}
+	.header {
+		img {
+			width: 60px;
+		}
+	}
+	header {
+		height: 30rem;
+	}
+	.menu2 {
+		li {
+			a {
+				font-size: 1.3rem;
+				padding-right: 20px;
+			}
+		}
+	}
+	.cards {
+		width: 300px;
+		margin: 10px 50px;
+		height: 420px;
+	}
+	.especialidad {
+		margin: 50px;
+		padding: 20px;
+		border-radius: 20px;
+		img {
+			width: 100%;
+			padding-right: 0px;
+			border-radius: 20px 20px 0 0;
+		}
+	}
+	.text3 {
+		width: 100%;
+		h2 {
+			font-size: 4rem;
+		}
+		h3 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+	}
+	.reseñas {
+		margin: 10px 0;
+		h2 {
+			font-size: 3rem;
+		}
+	}
+	.testimonios {
+		font-size: 1rem;
+		padding: 20px;
+		h3 {
+			font-size: 1.3rem;
+		}
+		&:hover {
+			width: 420px;
+			height: 500px;
+			border: solid 5px #ffde00;
+		}
+	}
+	.nutricion {
+		padding: 30px;
+		margin-top: 0px;
+		margin-bottom: 0;
+		h3 {
+			font-size: 1.8rem;
+		}
+	}
+	.text1 {
+		padding-right: 0px;
+		p {
+			font-size: 1.2rem;
+		}
+		h2 {
+			font-size: 2.2rem;
+		}
+	}
+	table {
+		margin-top: 20px;
+		width: 800px;
+	}
+	td {
+		font-size: 1rem;
+	}
+	.menu-ha {
+		h2 {
+			font-size: 3rem;
+			margin-bottom: 10px;
+		}
+	}
+	.tarj {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		border-radius: 25px;
+		margin: 20px;
+		.contend-card {
+			width: 300px;
+		}
+		&:hover {
+			.contend-card {
+				height: 300px;
+			}
+		}
+		.img1 {
+			height: 300px;
+		}
+		.contend-text {
+			margin: 10px;
+			font-size: 1rem;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	#check {
+		&:checked {
+			~ {
+				.menu-nav {
+					display: block;
+				}
+			}
+		}
+	}
+	.checkbtn {
+		display: block;
+		padding-right: 30px;
+	}
+	.menu-nav {
+		display: none;
+		position: absolute;
+		top: 12%;
+		left: 0%;
+		background: rgb(12, 12, 12);
+		width: 100%;
+		li {
+			padding: 2px;
+			display: flex;
+			justify-content: center;
+			margin: 0;
+		}
+	}
+	.header {
+		img {
+			width: 40px;
+		}
+	}
+	header {
+		height: 20rem;
+	}
+	.menu2 {
+		li {
+			a {
+				font-size: 1.3rem;
+				padding-right: 20px;
+			}
+		}
+	}
+	.cards {
+		width: 150px;
+		margin: 10px 15px;
+		height: 300px;
+		img {
+			width: 100%;
+			height: 150px;
+		}
+		h3 {
+			font-size: 1rem;
+		}
+		p {
+			font-size: 0.8rem;
+		}
+	}
+	.especialidad {
+		margin: 20px;
+		padding: 12px;
+		img {
+			width: 100%;
+			padding-right: 0px;
+			border-radius: 20px 20px 0 0;
+		}
+	}
+	.text3 {
+		width: 100%;
+		h2 {
+			font-size: 3rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+	.reseñas {
+		margin: 10px 0;
+		h2 {
+			font-size: 2rem;
+		}
+	}
+	.testimonios {
+		font-size: 1rem;
+		padding: 20px;
+		h3 {
+			font-size: 1.3rem;
+		}
+		&:hover {
+			width: 420px;
+			height: 500px;
+			border: solid 5px #ffde00;
+		}
+	}
+	.nutricion {
+		padding: 30px;
+		margin-top: 0px;
+		margin-bottom: 0;
+		h3 {
+			font-size: 1.8rem;
+		}
+	}
+	.text1 {
+		padding-right: 0px;
+		p {
+			font-size: 1.2rem;
+		}
+		h2 {
+			font-size: 2.2rem;
+		}
+	}
+	table {
+		display: none;
+	}
+	.menu-ha {
+		h2 {
+			font-size: 3rem;
+			margin-bottom: 10px;
+		}
+	}
+	.tarj {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		border-radius: 25px;
+		margin: 20px;
+		.contend-card {
+			width: 300px;
+		}
+		&:hover {
+			.contend-card {
+				height: 300px;
+			}
+		}
+		.img1 {
+			height: 300px;
+		}
+		.contend-text {
+			margin: 10px;
+			font-size: 1rem;
+		}
+	}
+	.footer {
+		text-align: center;
+		padding: 30px 20px;
+	}
+}

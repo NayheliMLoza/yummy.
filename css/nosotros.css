@@ -1,0 +1,525 @@
+@import "https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap";
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap";
+/*header*/
+@keyframes fotofondo {
+  from {
+    background-image: url(../img/trabajo.png);
+  }
+  to {
+    background-image: url(../img/locales.png);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body h3 {
+  font-family: "Merriweather", serif;
+}
+body p {
+  font-family: "Roboto Slab", serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.header img {
+  margin: auto 0 auto 20px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+header {
+  background-image: url(../img/locales.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 60rem;
+  animation-name: fotofondo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.checkbtn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.menu-nav {
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+}
+.menu-nav li {
+  margin: auto 10px;
+}
+.menu-nav li a {
+  text-decoration: none;
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 1.8rem;
+  padding: 20px;
+}
+.menu-nav li a:hover {
+  text-decoration: underline;
+  background-color: #ffde00;
+  color: black;
+}
+
+.activo {
+  background-color: #ffde00;
+}
+
+.menu2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffde00;
+  list-style: none;
+  padding: 10px 0;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: black;
+  font-family: "VT323", monospace;
+  font-size: 2.5rem;
+  padding-right: 50px;
+}
+.menu2 a:hover {
+  text-decoration: underline;
+}
+
+.nosotros {
+  color: white;
+  background-color: black;
+}
+
+.nos-cont img {
+  width: 99%;
+  padding-top: 5px;
+}
+.nos-cont h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+}
+.nos-cont p {
+  font-size: 1.3rem;
+}
+
+.text-bo {
+  color: #000000;
+}
+
+.unete {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.unete img {
+  width: 50%;
+  padding-right: 50px;
+}
+.unete h3 {
+  font-family: "Merriweather", serif;
+  color: black;
+  font-size: 2rem;
+  width: 50%;
+}
+
+.puestos-v {
+  margin: 40px 0;
+  color: #000000;
+}
+.puestos-v h2 {
+  font-family: "VT323", monospace;
+  color: #000000;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.puestos-va {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.puestos {
+  border: 4px solid #000000;
+  border-radius: 20px;
+  padding: 10px;
+  overflow: hidden;
+  width: 350px;
+  height: 640px;
+  margin-bottom: 50px;
+  transition: all 2s ease;
+}
+.puestos h2 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+}
+.puestos:hover {
+  background-color: #000000;
+  color: #ffde00;
+  border: solid 3px white;
+  box-shadow: 20px 20px 50px #ffde00;
+}
+.puestos ul {
+  text-align: start;
+  width: 280px;
+  margin-left: 1rem;
+}
+.puestos img {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+.text-b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.beneficios {
+  background-color: #000000;
+  border-radius: 20px;
+  margin: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+.beneficios h2 {
+  font-family: "VT323", monospace;
+  font-size: 5rem;
+  color: #ffde00;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-2 {
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #ffde00;
+}
+.text-2 img {
+  width: 140px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 10px;
+  background-color: #ffde00;
+  color: #000000;
+  padding: 30px;
+  border-radius: 20px;
+}
+.forms img {
+  width: 50%;
+}
+.forms h2 {
+  font-size: 3rem;
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.forms label {
+  font-size: 1.5rem;
+  font-family: "Merriweather", serif;
+}
+.forms input {
+  border: solid 2px #000000;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 10px;
+}
+.forms button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  font-size: 1.3rem;
+  font-family: "Merriweather", serif;
+  border: solid 3px #000000;
+  background-color: #ffde00;
+}
+.forms button:hover {
+  background-color: #000000;
+  border: solid 3px white;
+  color: white;
+}
+
+.form-1 {
+  text-align: center;
+  padding-left: 150px;
+}
+
+.testi {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.testimonios {
+  width: 760px;
+  margin: 30px;
+  border-radius: 20px;
+  border: solid 3px black;
+  padding: 10px;
+  color: black;
+}
+.testimonios img {
+  width: 220px;
+  float: left;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.testimonios h3 {
+  font-family: "Merriweather", serif;
+}
+
+.vacio {
+  height: 50px;
+  background-color: #ffde00;
+  margin-top: 40px;
+  text-align: center;
+  color: #000000;
+  padding-top: 10px;
+  font-family: "Merriweather", serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: #000000;
+  color: #ffde00;
+}
+.footer h3 {
+  font-size: 1.5rem;
+  padding-top: 25px;
+  text-decoration: underline;
+}
+.footer li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.redes ul {
+  display: flex;
+  font-size: 2rem;
+}
+.redes img {
+  width: 100px;
+}
+.redes h2 {
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  color: #ffde00;
+  text-align: justify;
+}
+.redes li a {
+  padding-right: 20px;
+}
+
+.copy {
+  background-color: #535252;
+  clear: both;
+  color: #b6b4b4;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #check:checked ~ .menu-nav {
+    display: block;
+  }
+  .checkbtn {
+    display: block;
+    padding-right: 30px;
+  }
+  .menu-nav {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    background: rgb(12, 12, 12);
+    width: 100%;
+  }
+  .menu-nav li {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .header img {
+    width: 60px;
+  }
+  header {
+    height: 30rem;
+  }
+  .menu2 li a {
+    font-size: 1.3rem;
+    padding-right: 20px;
+  }
+  .unete {
+    margin: 30px;
+  }
+  .unete img {
+    width: 100%;
+    padding-right: 0;
+  }
+  .unete h3 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .forms {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    color: #000000;
+    padding: 10px;
+  }
+  .forms img {
+    width: 100%;
+  }
+  .forms h2 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  .forms label {
+    font-size: 1rem;
+  }
+  .forms input {
+    width: 400px;
+    height: 35px;
+  }
+  .forms button {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .form-1 {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #check:checked ~ .menu-nav {
+    display: block;
+  }
+  .checkbtn {
+    display: block;
+    padding-right: 30px;
+  }
+  .menu-nav {
+    display: none;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    background: rgb(12, 12, 12);
+    width: 100%;
+  }
+  .menu-nav li {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .header img {
+    width: 40px;
+  }
+  header {
+    height: 20rem;
+  }
+  .menu2 li a {
+    font-size: 1.3rem;
+    padding-right: 20px;
+  }
+  .unete {
+    margin: 30px;
+  }
+  .unete img {
+    width: 100%;
+    padding-right: 0;
+  }
+  .unete h3 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .forms {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    color: #000000;
+    padding: 10px;
+  }
+  .forms img {
+    width: 100%;
+  }
+  .forms h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .forms label {
+    font-size: 1rem;
+  }
+  .forms input {
+    width: 300px;
+    height: 35px;
+  }
+  .forms button {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .form-1 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .testimonios {
+    text-align: center;
+  }
+  .testimonios img {
+    width: 100%;
+    padding-right: 0px;
+    border-radius: 0px;
+  }
+  .vacio h2 {
+    font-size: 1rem;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+
+/*# sourceMappingURL=nosotros.css.map */
